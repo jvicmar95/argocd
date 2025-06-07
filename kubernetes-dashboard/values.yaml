@@ -449,3 +449,5 @@ extras:
     # ServiceMonitor connection tlsConfig. Defaults to {insecureSkipVerify:true}.
     tlsConfig:
       insecureSkipVerify: true
+adminUser:
+  enabled: true
