@@ -252,7 +252,7 @@ web:
     replicas: 1
     revisionHistoryLimit: 10
   service:
-    type: ClusterIP
+    type: NodePort
     extraSpec: ~
   containers:
     ports:
