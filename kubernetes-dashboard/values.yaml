@@ -252,7 +252,7 @@ web:
     replicas: 1
     revisionHistoryLimit: 10
   service:
-    type: NodePort
+    type: ClusterIP
     extraSpec: ~
   containers:
     ports:
@@ -394,7 +394,7 @@ kong:
   dblessConfig:
     configMap: kong-dbless-config
   proxy:
-    type: ClusterIP
+    type: NodePort
     http:
       enabled: false
 
