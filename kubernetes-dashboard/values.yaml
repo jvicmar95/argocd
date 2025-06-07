@@ -394,7 +394,7 @@ kong:
   dblessConfig:
     configMap: kong-dbless-config
   proxy:
-    type: NodePort
+    type: ClusterIP
     http:
       enabled: false
 
